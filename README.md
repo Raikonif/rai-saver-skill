@@ -1,4 +1,4 @@
-## rai-compact-saver
+## rai-saver-skill
 
 Purpose: save tokens with strict minimal replies.
 
@@ -30,7 +30,9 @@ npx skills add https://github.com/Raikonif/rai-saver-skill.git
 - In `ON`:
   - Non-code requests return 1-2 short lines.
   - Code requests return full implementation plus edited file paths.
+  - Direct file edits return only `FILES:` with edited paths.
   - Blocked requests return one line: `BLOCKED: missing <exact requirement>.`
+  - No prose change summaries like "Added", "Updated", or "Implemented".
 
 ## License
 Licensed under the terms in [LICENCE](/Users/raikonif/Desktop/Projects/personal/rai-saver-skill/LICENCE).

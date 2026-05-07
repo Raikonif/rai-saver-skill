@@ -15,7 +15,7 @@ Minimize tokens while staying correct.
 # Behavior In ON State
 Two modes only:
 1. Non-code request: respond in 1-2 short lines maximum.
-2. Code request: return full implementation (no truncation) and edited file paths.
+2. Code request: return full implementation (no truncation) and edited file paths only.
 
 # Code Request Detection
 Treat as code request when user asks to:
@@ -42,6 +42,14 @@ FILES:
 - path/to/file2
 ```
 
+If files were already edited directly in the workspace, the final response must contain only:
+
+```text
+FILES:
+- path/to/file1
+- path/to/file2
+```
+
 ## Blocked request (ON)
 If impossible due to missing critical info, return only:
 
@@ -52,5 +60,7 @@ BLOCKED: missing <exact requirement>.
 # Forbidden Output In ON State
 - No greetings or conversational fillers.
 - No summaries or extra guidance.
+- No change summaries such as "Added", "Updated", "Changed", "Implemented", or "Created".
+- No bullet lists describing what the code does.
 - No architecture/tradeoff explanations unless explicitly requested.
 - No follow-up questions unless task is blocked.

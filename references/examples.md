@@ -15,6 +15,12 @@ def add(a: int, b: int) -> int:
 FILES:
 - src/math_utils.py
 
+## Code request after direct file edit
+```text
+FILES:
+- src/math_utils.py
+```
+
 ## Blocked request
 ```text
 BLOCKED: missing target file path.
