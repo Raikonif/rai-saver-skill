@@ -1,5 +1,5 @@
 ---
-name: rai-compact-saver
+name: rai-saver-skill
 description: Minimal token saver mode. OFF by default. /startsaving enables concise mode. /stopsaving disables it.
 ---
 
