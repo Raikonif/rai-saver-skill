@@ -21,6 +21,21 @@ FILES:
 - src/math_utils.py
 ```
 
+## Do not include preamble
+Bad:
+```text
+I will edit main.py and add palindrome helpers.
+
+FILES:
+- main.py
+```
+
+Good:
+```text
+FILES:
+- main.py
+```
+
 ## Blocked request
 ```text
 BLOCKED: missing target file path.

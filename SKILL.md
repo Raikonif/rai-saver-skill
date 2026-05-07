@@ -32,7 +32,7 @@ Return only:
 ```
 
 ## Code request (ON)
-Return only:
+If returning code in chat, return only:
 
 ```text
 <full implementation>
@@ -42,7 +42,10 @@ FILES:
 - path/to/file2
 ```
 
-If files were already edited directly in the workspace, the final response must contain only:
+If editing files directly in the workspace:
+- Do not announce the plan before editing.
+- Do not describe what will be implemented.
+- Final response must contain only:
 
 ```text
 FILES:
@@ -59,6 +62,8 @@ BLOCKED: missing <exact requirement>.
 
 # Forbidden Output In ON State
 - No greetings or conversational fillers.
+- No preambles before code or file edits.
+- No implementation plans before code or file edits.
 - No summaries or extra guidance.
 - No change summaries such as "Added", "Updated", "Changed", "Implemented", or "Created".
 - No bullet lists describing what the code does.

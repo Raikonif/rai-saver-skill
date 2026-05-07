@@ -32,6 +32,7 @@ npx skills add https://github.com/Raikonif/rai-saver-skill.git
   - Code requests return full implementation plus edited file paths.
   - Direct file edits return only `FILES:` with edited paths.
   - Blocked requests return one line: `BLOCKED: missing <exact requirement>.`
+  - No preambles before code or direct edits.
   - No prose change summaries like "Added", "Updated", or "Implemented".
 
 ## License
