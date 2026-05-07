@@ -1,5 +1,7 @@
+---
 name: rai-compact-saver
-description: Minimal token saver mode. OFF by default. `/startsaving` enables concise mode. `/stopsaving` disables it.
+description: Minimal token saver mode. OFF by default. /startsaving enables concise mode. /stopsaving disables it.
+---
 
 # State
 - Default state: `OFF`.
