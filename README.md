@@ -3,9 +3,18 @@
 Purpose: save tokens with strict minimal replies.
 
 ## Install
-1. Copy this folder into your local skills directory.
-2. Ensure `SKILL.md` remains at the skill root.
-3. Reload/restart your Codex session so the skill is discovered.
+Copy and paste one of these:
+
+Install only this skill:
+```bash
+npx skills add https://github.com/Raikonif/rai-saver-skill.git --skill rai-saver-skill
+```
+
+Install all skills from this repository:
+```bash
+npx skills add https://github.com/Raikonif/rai-saver-skill.git
+```
+
 
 ## Includes
 - `SKILL.md`: behavior contract and output rules.
